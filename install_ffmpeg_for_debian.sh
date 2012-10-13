@@ -56,7 +56,7 @@ make
 sudo checkinstall --pkgname=faac --pkgversion="1:$(date +%Y%m%d%H%M)-git" --backup=no \
   --deldoc=yes --fstrans=no --default
 cd 
-#Ç∆ÇËÇ†Ç¶Ç∏ÅBÉäÉìÉN
+#„Å®„Çä„ÅÇ„Åà„Åö„ÄÇ„É™„É≥„ÇØ
 #sudo ln -s   /usr/local/lib/libfaac.so.0.0.0  /usr/lib/libfaac.so.0
 #sudo ln -s   /usr/local/lib/libmp3lame.so.0.0.0 /usr/lib/libmp3lame.so.0
 sudo ldconfig
@@ -79,7 +79,7 @@ git clone --depth 1 git://source.ffmpeg.org/ffmpeg
 cd ffmpeg
 ./configure --enable-gpl --enable-libfaac --enable-libmp3lame --enable-libopencore-amrnb \
     --enable-libopencore-amrwb --enable-libtheora --enable-libvorbis --enable-libx264 \
-    --enable-nonfree --enable-postproc --enable-version3 --enable-x11grab
+    --enable-nonfree --enable-postproc --enable-version3
 make
 sudo checkinstall --pkgname=ffmpeg --pkgversion="5:$(date +%Y%m%d%H%M)-git" --backup=no \
   --deldoc=yes --fstrans=no --default
